@@ -1,0 +1,118 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.container{
+    max-width: 1400px;
+    width: 80%;
+} 
+
+.container-2{
+    height: 80vh;
+}
+
+.colored{
+    background-color: #24292f;
+}
+
+h1{
+    color: #ebc556;
+    font-size: 45px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1 a i{
+    color: #ebc556;
+    font-size: 40px;
+}
+
+h2{
+    font-size: 45px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ebc556;
+}
+
+.text-colored{
+    color: #ebc556;
+}
+
+.container p{
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #f7f9f8;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #ebc556;
+}
+
+.nav-link{
+    color: #f7f9f8;
+}
+
+.card{
+    border: none;
+}
+
+#sobre, #produtos, #fale-conosco{
+    background-color: #24292f;
+}
+
+button{
+    background-color: #f7f9f8;
+}
+
+.col-md-4 .card{
+    padding: 16px;
+    height: 420px;
+    width: 230px;
+    margin-top: 30px;
+}
+
+#aba2 .card{
+    height: 440px;
+}
+
+.col-md-4 .card img{
+    border-radius: 10px;
+}
+
+.card button{
+    width: 100px;
+    padding: 8px;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+@media (max-width: 767px){
+    .carousel-item-img{
+        height: 280px;
+    }
+
+    .row .cent{
+        display: block;
+        margin-left: 43%;
+    }
+
+    .col-md-4 .card{
+        padding: 16px;
+        height: 420px;
+        width: 230px;
+        margin-top: 30px;
+    }
+}
