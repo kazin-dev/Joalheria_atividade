@@ -1,89 +1,73 @@
 body{
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-    
 }
 
 .container{
-    max-width: 1400px;
-    width: 80%;
-} 
-
-.container-2{
-    height: 80vh;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.colored{
+.navbar{
     background-color: #24292f;
-}
-
-h1{
-    color: #ebc556;
-    font-size: 45px;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-h1 a i{
-    color: #ebc556;
-    font-size: 40px;
-}
-
-h2{
-    font-size: 45px;
-    font-family: 'Cormorant Garamond', serif;
-    color: #ebc556;
-}
-
-.text-colored{
-    color: #ebc556;
-}
-
-.container p{
-    font-size: 25px;
-    font-family: 'Cormorant Garamond', serif;
-    color: #f7f9f8;
 }
 
 #cabecalho .nav .nav-link.active{
-    background-color: #ebc556;
+    background-color: #ebc557;
+    color: #fff;
 }
 
-.nav-link{
-    color: #f7f9f8;
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: #fff;
 }
 
-.card{
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.section-title{
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: #ebc557;
+
+}
+
+.section-title span{
+    color: #ffeae6;
+}
+
+#sobre-a-joalheria, #produtos{
+    background-color: #24292f;
+}
+p, ul, li{
+    color: #fff;
+}
+
+#produtos{
+    box-shadow: #24292f 10px;
+}
+
+.text-colored{
+    color: #ebc557;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
+    background-color: #ebc557;
+    color: #24292f;
+}
+
+#produtos .nav-link{
+    color: #24292f;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
     border: none;
 }
 
-#sobre, #produtos, #fale-conosco{
-    background-color: #24292f;
-}
-
-button{
-    background-color: #f7f9f8;
-}
-
-.col-md-4 .card{
-    padding: 16px;
-    height: 420px;
-    width: 230px;
-    margin-top: 30px;
-}
-
-#aba2 .card{
-    height: 440px;
-}
-
-.col-md-4 .card img{
-    border-radius: 10px;
-}
-
-.card button{
-    width: 100px;
-    padding: 8px;
-    margin-left: 20px;
-    margin-top: 16px;
+#produtos .nav-link.active{
+    background-color: #ebc557;
 }
 
 .social-links li{
@@ -95,24 +79,36 @@ button{
     text-decoration: none;
 }
 
-.navbar-toggler{
-    background-color: #fff;
+.card{
+    padding: 16px;
+    margin-top: 10px;
 }
 
-@media (max-width: 767px){
-    .carousel-item-img{
-        height: 280px;
-    }
 
-    .row .cent{
-        display: block;
-        margin-left: 43%;
-    }
 
+
+
+
+@media screen and (min-width:767px) and (max-width: 1200px){
     .col-md-4 .card{
-        padding: 16px;
-        height: 420px;
-        width: 230px;
-        margin-top: 30px;
+        width: 10rem;
+    }
+
+    .carousel-item img{
+        height: auto;
+        max-width: 100%;
     }
 }
+
+@media screen and (max-width: 767px){
+        .carousel-inner img{
+            height: auto;
+            max-width: 100%;
+        }
+
+        .col-md-4{
+            display: flex;
+            justify-content: center;
+        }
+}
+
